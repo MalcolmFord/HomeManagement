@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  maintenance_type: one
+  housing_unit: one
+  cost_of_supplies: 1
+  cost_of_labor: 1
+  date_reported: 2019-12-14
+  date_fixed: 2019-12-14
+  start_time: 2019-12-14 21:46:32
+  end_time: 2019-12-14 21:46:32
+  assigned_workers: 
+  user: one
+
+two:
+  maintenance_type: two
+  housing_unit: two
+  cost_of_supplies: 1
+  cost_of_labor: 1
+  date_reported: 2019-12-14
+  date_fixed: 2019-12-14
+  start_time: 2019-12-14 21:46:32
+  end_time: 2019-12-14 21:46:32
+  assigned_workers: 
+  user: two

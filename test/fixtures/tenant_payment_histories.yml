@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tenant: one
+  date_received: 2019-12-14
+  amount_payed: 1
+  amount_due: 1
+  payment_method: MyString
+  confirmation_id: MyString
+
+two:
+  tenant: two
+  date_received: 2019-12-14
+  amount_payed: 1
+  amount_due: 1
+  payment_method: MyString
+  confirmation_id: MyString

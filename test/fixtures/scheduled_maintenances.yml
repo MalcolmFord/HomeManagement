@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  housing_unit: one
+  maintenance_type: one
+  date: 2019-12-14
+  time: 2019-12-14 21:49:31
+  assigned_workers: 
+  completed: false
+  date_completed: 2019-12-14
+  description: MyText
+
+two:
+  housing_unit: two
+  maintenance_type: two
+  date: 2019-12-14
+  time: 2019-12-14 21:49:31
+  assigned_workers: 
+  completed: false
+  date_completed: 2019-12-14
+  description: MyText

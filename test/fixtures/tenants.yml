@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: 
+  housing_unit: one
+  monthly_rent: 1
+  move_in: 2019-12-14
+  move_out: 2019-12-14
+  notes: MyString
+
+two:
+  user: 
+  housing_unit: two
+  monthly_rent: 1
+  move_in: 2019-12-14
+  move_out: 2019-12-14
+  notes: MyString

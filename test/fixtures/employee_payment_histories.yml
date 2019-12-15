@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  employee: one
+  amount_owed: 1
+  amount_payed: 1
+  date_payed: 2019-12-14
+  payment_method: MyString
+  description: MyString
+
+two:
+  employee: two
+  amount_owed: 1
+  amount_payed: 1
+  date_payed: 2019-12-14
+  payment_method: MyString
+  description: MyString
