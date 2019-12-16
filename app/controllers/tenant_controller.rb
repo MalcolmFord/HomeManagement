@@ -1,2 +1,0 @@
-class TenantController < ApplicationController
-end

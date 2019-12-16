@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  
-  get 'users/Employees'
-  get 'users/Tenants'
-  get 'users/HousingUnits'
+  root'housing_units#index'
+  resources :employees
+  resources :tenants
+  resources :housing_units
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
