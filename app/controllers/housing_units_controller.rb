@@ -7,8 +7,14 @@ class HousingUnitsController < ApplicationController
     def show
 
     end
-    def edit
-
+    def update
+        @unit = HousingUnit.find(params[:id])
+        # render json: @unit
+        if @unit.update(unit_params)
+            render json: {status: 'SUCCESS', message:'New House Added!', data:@unit}, status: :ok
+        else
+            render json: {status: 'ERROR', message:'User Not Saved!', data:@unit.errors}, status: :unprocessable_entity
+        end
     end
     def create
         @unit = HousingUnit.new(unit_params)
@@ -18,9 +24,6 @@ class HousingUnitsController < ApplicationController
         else
             render json: {status: 'ERROR', message:'User Not Saved!', data:@unit.errors}, status: :unprocessable_entity
         end
-    end
-    def update
-
     end
     def destroy
 
