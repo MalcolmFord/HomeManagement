@@ -1,6 +1,8 @@
 class HousingUnitsController < ApplicationController
+    
     def index
-        render :json => "abc"
+        @unit = HousingUnit.order('created_at DESC')
+        render json: {status: "Success", message:"Loaded homes", data: @unit}
     end
     def show
 
@@ -9,7 +11,13 @@ class HousingUnitsController < ApplicationController
 
     end
     def create
-
+        @unit = HousingUnit.new(unit_params)
+        # render json: @unit
+        if @unit.save
+            render json: {status: 'SUCCESS', message:'New House Added!', data:@unit}, status: :ok
+        else
+            render json: {status: 'ERROR', message:'User Not Saved!', data:@unit.errors}, status: :unprocessable_entity
+        end
     end
     def update
 
@@ -19,7 +27,8 @@ class HousingUnitsController < ApplicationController
     end
 
     private
+    
     def unit_params
-
+        params.permit(:address, :city, :state, :zipcode, :spft, :beds, :baths, :rooms, :description, :unit_type_id, :user_id, :rent, :available_date, :created_at, :updated_at, :id)
     end
 end
