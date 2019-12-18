@@ -1,11 +1,12 @@
 class HousingUnitsController < ApplicationController
-    
+
     def index
         @unit = HousingUnit.order('created_at DESC')
         render json: {status: "Success", message:"Loaded homes", data: @unit}
     end
     def show
-
+        @unit = HousingUnit.find(params[:id])
+        render json: @unit
     end
     def update
         @unit = HousingUnit.find(params[:id])
@@ -26,7 +27,11 @@ class HousingUnitsController < ApplicationController
         end
     end
     def destroy
-
+        @unit = HousingUnit.find(params[:id])
+        if @unit.destroy
+            render json: "House deleted successfully"
+        else
+            render json: {status: 'Success', date:@unit.errors, message: "House not deleted"}
     end
 
     private
