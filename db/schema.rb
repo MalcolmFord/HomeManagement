@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_18_045833) do
+ActiveRecord::Schema.define(version: 2019_12_19_193100) do
 
 # Could not dump table "employee_payment_histories" because of following StandardError
 #   Unknown type 'uuid' for column 'id'
@@ -49,6 +49,6 @@ ActiveRecord::Schema.define(version: 2019_12_18_045833) do
 #   Unknown type 'uuid' for column 'id'
 
 # Could not dump table "users" because of following StandardError
-#   Unknown type 'uuid' for column 'id'
+#   Unknown type '' for column 'id'
 
 end
